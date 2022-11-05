@@ -1,8 +1,8 @@
+import carReducer from "../features/car/carSlice";
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    car: carReducer
   },
 });
