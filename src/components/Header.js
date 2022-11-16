@@ -18,7 +18,7 @@ function Header() {
       <Menu>
         {cars && cars.map((car, index) => {
           return (
-            <a key={index} href="javascript:void(0)">{car}</a>
+            <a key={index} href="/#">{car}</a>
           );
         })}
         {/* <a href="javascript:void(0)">Model 3</a>
@@ -26,8 +26,8 @@ function Header() {
         <a href="#">Model Y</a> */}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="/#">Shop</a>
+        <a href="/#">Tesla Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -35,21 +35,21 @@ function Header() {
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
         {cars && cars.map((car, index) => (
-          <li key={index}><a href="#">{car}</a></li>
+          <li key={index}><a href="/#">{car}</a></li>
         ))}
-        <li><a href="#">Used Inventory</a></li>
-        <li><a href="#">Trade-In</a></li>
-        <li><a href="#">Test Drive</a></li>
-        <li><a href="#">Insurance</a></li>
-        <li><a href="#">Powerwall</a></li>
-        <li><a href="#">Commercial Energy</a></li>
-        <li><a href="#">Utilities</a></li>
-        <li><a href="#">Charging</a></li>
-        <li><a href="#">Find Us</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Investor Relations</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Account</a></li>
+        <li><a href="/#">Used Inventory</a></li>
+        <li><a href="/#">Trade-In</a></li>
+        <li><a href="/#">Test Drive</a></li>
+        <li><a href="/#">Insurance</a></li>
+        <li><a href="/#">Powerwall</a></li>
+        <li><a href="/#">Commercial Energy</a></li>
+        <li><a href="/#">Utilities</a></li>
+        <li><a href="/#">Charging</a></li>
+        <li><a href="/#">Find Us</a></li>
+        <li><a href="/#">Support</a></li>
+        <li><a href="/#">Investor Relations</a></li>
+        <li><a href="/#">Shop</a></li>
+        <li><a href="/#">Account</a></li>
       </BurgerNav>
     </Container>
   )
